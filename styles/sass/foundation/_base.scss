@@ -1,0 +1,21 @@
+@use '../global/variables' as g;
+
+html {
+    // font-size: 62.5%; /* 10px */
+    font-family: 'Noto Sans JP','游ゴシック','YuGothic','Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro','ＭＳ ゴシック',sans-serif;
+    text-size-adjust: 100%;
+}
+body {
+    background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-default);
+    min-width: g.$min-width + px;
+
+    & * {
+      font-feature-settings : "palt";
+    }
+}
+
+::selection{background:rgba(128, 128, 128, 0.2);}

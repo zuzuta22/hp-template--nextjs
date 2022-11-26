@@ -1,0 +1,19 @@
+@use './variables' as var;
+
+@mixin mq-up($breakpoint: m) {
+    @media screen and (#{map-get(var.$breakpoint_up, $breakpoint)} ) {
+        @content;
+    }
+}
+
+@mixin mq-dn($breakpoint: m) {
+    @media screen and (#{map-get(var.$breakpoint_dn, $breakpoint)} ) {
+        @content;
+    }
+}
+
+@mixin mq-and($breakpoint_min: s,$breakpoint_max: l) {
+    @media screen and (min-width: #{map-get(var.$breakpoint_up, $breakpoint_min)} ) and (max-width: #{map-get(var.$breakpoint_dn, $breakpoint_max)}) {
+        @content;
+    }
+}

@@ -1,0 +1,42 @@
+// ==========================
+// font-size
+// ==========================
+$default_fs: 10;
+$line_height: 1.714;
+$min-width: 375;
+
+// ==========================
+// width
+// ==========================
+$width_small: 1120;
+$width_basic: 1240;
+$width_large: 1460;
+$width_comp: 1860;
+
+// ==========================
+// media query
+// ==========================
+$bp_sp: 480px;
+$bp_xs: 640;
+$bp_s: 768;
+$bp_m: 1024;
+$bp_l: 1240;
+$bp_xl: 1720;
+
+$breakpoint_up: (
+  "sp": "min-width: #{$bp_sp + px}",
+  "xs": "min-width: #{$bp_xs + 1 + px}",
+  "s": "min-width: #{$bp_s + 1 + px}",
+  "m": "min-width: #{$bp_m + 1 + px}",
+  "l": "min-width: #{$bp_l + 1 + px}",
+  "xl": "min-width: #{$bp_xl + 1 + px}",
+) !default;
+
+$breakpoint_dn: (
+  "sp": "max-width: #{$bp_sp + px}",
+  "xs": "max-width: #{$bp_xs + px}",
+  "s": "max-width: #{$bp_s + px}",
+  "m": "max-width: #{$bp_m + px}",
+  "l": "max-width: #{$bp_l + px}",
+  "xl": "max-width: #{$bp_xl + px}",
+) !default;

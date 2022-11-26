@@ -1,0 +1,15 @@
+.txt--l {
+  font-size: clamp(1.8rem, 3.125vw, 2rem);
+}
+
+.txt--s {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+.txt--bold {
+  font-weight: 700;
+}
+
+.txt--red {
+  color: var(--color-red);
+}
