@@ -1,5 +1,36 @@
 @use "../global" as g;
 
 :root {
-  --color-red: #c30d23;
+  // カラー
+  --color-primary: #232F5f;
+  --color-primary-light: color-mod(var(--color-primary) tint(15%));
+  --color-primary-dark: color-mod(var(--color-primary) shade(15%));
+  --color-primary-bg: color-mod(var(--color-primary) alpha(20%));
+  
+  --color-accent: #7097c3;
+  --color-accent-light: color-mod(var(--color-accent) tint(15%));
+  --color-accent-dark: color-mod(var(--color-accent) shade(10%));
+  --color-accent-bg: color-mod(var(--color-accent) alpha(20%));
+
+  --black: #1d1d21;
+  --gray-10: #2e2e31;
+  --gray-6: #7b7a7d;
+  --gray-4: #a5a5a6;
+  --gray-3: #bbbbbc;
+  --gray-2: #d1d0d2;
+  --gray-1: #e8e7e8;
+  --white: white;
+
+
+   /* feedback */
+  --color-success: #88c459;
+  --color-error: #f5414f;
+  --color-warning: #ffd137;
+
+  // margin
+  --margin-xs: 10px;
+  --margin-s: 15px;
+  --margin: 30px;
+  --margin-l: 60px;
+  --margin-xl: 100px; 
 }
