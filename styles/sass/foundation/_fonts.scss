@@ -1,8 +1,10 @@
 .txt--l {
+  // TODO: clamp to auto_clamp
   font-size: clamp(1.8rem, 3.125vw, 2rem);
 }
 
 .txt--s {
+  // TODO: clamp to auto_clamp
   font-size: clamp(1rem, 2.5vw, 1.4rem);
 }
 

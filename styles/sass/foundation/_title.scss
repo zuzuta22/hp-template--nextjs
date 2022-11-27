@@ -1,0 +1,39 @@
+@use '../global' as g; 
+
+.pageTitle {
+  font-size: clamp(3.8rem, 4.947vw, 4.8rem);
+  // TODO: margin-top should be adopted auto_clamp
+  margin-top: var(--margin);
+  padding: .5em 0;
+  border-top: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  text-align: center;
+}
+
+.title1 {
+  // font-size: g.auto_clamp(24,30,$utit:rem);
+  // TODO: Make auto_clamp enabled  
+  background: transparent;
+  border-left: 5px solid var(--color-primary);
+  color: var(--color-primary);
+  font-size: clamp(2.8rem, 3.645vw, 3.6rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding: .25em .5em;
+}
+
+.title2 {
+  border-bottom: 3px solid var(--color-accent);
+  display: inline-block;
+  font-size: clamp(2.4rem, 3.125vw, 2.8rem);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-bottom: 3px solid var(--color-primary);
+    bottom: -3px;
+    width: 30%;
+  }
+}
