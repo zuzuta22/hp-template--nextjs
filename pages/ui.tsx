@@ -4,8 +4,9 @@ import { NextPage } from 'next';
 import PageTitle from '../const/pageTitle';
 
 // components
-import Titles from '../components/elements/_titles';
+import Titles from '../components/pages/ui/_titles';
 import Texts from '../components/elements/_texts';
+import Buttons from '../components/pages/ui/_buttons';
 
 
 const Ui:NextPage = () => {
@@ -16,13 +17,8 @@ const Ui:NextPage = () => {
         <p>This is the UI introduction.</p>
         <Titles sectionName="Titles" />
         <Texts sectionName="Texts" />
+        <Buttons sectionName="Buttons" />
         {/* <section>
-          <h2>Button</h2>
-        </section>
-        <section>
-
-        </section>
-        <section>
           <h2>Table</h2>
         </section> */}
       </section>

@@ -1,6 +1,6 @@
 import styles from './_text.module.scss';
 
-const Fonts = (props:string) => {
+const Texts = (props:string) => {
   return (
     <section>
       <h2 className="pageTitle">{props.sectionName}</h2>
@@ -14,4 +14,4 @@ const Fonts = (props:string) => {
   )
 }
 
-export default Fonts;
+export default Texts;
