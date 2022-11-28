@@ -5,9 +5,33 @@
   // TODO: margin-top should be adopted auto_clamp
   margin-top: var(--margin);
   padding: .5em 0;
-  border-top: 1px solid var(--color-primary);
-  border-bottom: 1px solid var(--color-primary);
   text-align: center;
+
+  & span {
+    display: inline-block;
+    position: relative;
+
+    &::before,
+    &::after {
+      background: var(--color-primary);
+      content: '';
+      height: 2px;
+      width: calc(100% + var(--margin-l));
+      position: absolute;
+      left: calc((var(--margin-l) / 2) * -1);
+      margin: auto;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      bottom: -1rem;
+    }
+  }
+
+  
+
 }
 
 .title1 {
@@ -23,17 +47,26 @@
 }
 
 .title2 {
-  border-bottom: 3px solid var(--color-accent);
-  display: inline-block;
   font-size: clamp(2.4rem, 3.125vw, 2.8rem);
   position: relative;
 
+  &::before,
   &::after {
+    background: var(--color-accent);
+    content: '';
+    display: inline;
+    height: 3px;
     position: absolute;
-    content: "";
-    display: block;
-    border-bottom: 3px solid var(--color-primary);
-    bottom: -3px;
-    width: 30%;
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    width: clamp(30rem, 8vw, 50vw);
+  }
+
+  &::after {
+    background: var(--color-primary);
+    width: clamp(3rem, 10.6vw, 10vw);
   }
 }
+
+

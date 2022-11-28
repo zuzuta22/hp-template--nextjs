@@ -1,0 +1,16 @@
+import CustomTitle from '../../elements/_title';
+
+const Titles = (props:string) => {
+  return (
+    <section>
+      <CustomTitle tagName="h2" classText="pageTitle" titleText={props.sectionName} />
+      <section>
+        <CustomTitle tagName="h2" classText="title1" titleText="H2 Title" />
+        <CustomTitle tagName="h3" classText="title2" titleText="H3 Title" />
+        <h3 className="title2">静的宣言タイトル</h3>
+      </section>
+    </section>
+  )
+}
+
+export default Titles;

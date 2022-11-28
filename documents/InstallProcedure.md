@@ -41,9 +41,9 @@ tsconfig.jsonを修正
 "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx","next-env.d.ts","src/**/*"],
 ```
 
-
-## 下層ページ作成
-pagesフォルダに新しいフォルダを作成してindex.tsxファイルを作る
-(例)pages/about/index.tsx
-
-※Next.jsはpages以下にフォルダを作ってその下にindex.tsx(index.js)を作ったら/aboutに自動ルーティングされる
+## CSSモジュールの注意点
+クラス名にハイフンを使えないので以下のように定義する
+```
+/* <h2 className={styles.test-class}>駄目な例</h2> */
+<h2 className={styles[test-class]}</h2>
+```

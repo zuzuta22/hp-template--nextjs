@@ -1,0 +1,47 @@
+.c-button {
+  background: var(--color-primary);
+  border-radius: 100vh;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s ease-out;
+  width: clamp(290px, 77.3vw, 300px);
+
+  &:hover {
+    background: var(--color-accent);
+  }
+
+  &--cubic {
+    border-bottom: 5px solid var(--color-accent);
+    border-radius: 5px;
+
+    &:hover {
+      margin-top: 3px;
+      border-bottom: 2px solid var(--color-accent);
+    }
+  }
+
+  &--arrow {
+    position: relative;
+    
+    &::after {
+      border-top: 2px solid var(--white);
+      border-right: 2px solid var(--white);
+      content: '';
+      transform: rotate(45deg);
+      transition: all .3s ease;
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+    }
+
+    &:hover::after {
+      right: 1.5rem;
+      transition: all .3s ease;
+    }
+  }
+}
