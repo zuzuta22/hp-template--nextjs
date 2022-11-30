@@ -21,16 +21,23 @@
   --gray-1: #e8e7e8;
   --white: white;
 
-
-   /* feedback */
-  --color-success: #88c459;
-  --color-error: #f5414f;
+   // feedback
+  --color-success: #107C22;
+  --color-error: #AF1D1D;
   --color-warning: #ffd137;
+  --color-link: #3276BA;
+
+  // layout
+  --color-background: var(--white);
+  --color-block: #7781B1;
+  --color-footer-nav: #2C3149;
+  --color-footer: #2C2E37;
+  --color-icon: #5B6598;
 
   // margin
   --margin-xs: 10px;
   --margin-s: 15px;
   --margin: 30px;
   --margin-l: 60px;
-  --margin-xl: 100px; 
+  --margin-xl: 100px;
 }
