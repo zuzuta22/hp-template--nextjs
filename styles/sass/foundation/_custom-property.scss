@@ -43,4 +43,20 @@
   --margin: 30px;
   --margin-l: 60px;
   --margin-xl: 100px;
+
+  // breakpoint
+  --bp-min: 375;
+  --bp-xs: 480;
+  --bp-s: 768;
+  --bp: 1024;
+  --bp-l: 1280;
+  --bp-max: 1920;
+
+  // width
+  --width-min: 375px;
+  --width-xs: 480px;
+  --width-s: 768px;
+  --width: 1024px;
+  --width-l: 1280px;
+  --width-max: 1920px;
 }

@@ -2,8 +2,6 @@
 
 .pageTitle {
   font-size: clamp(3.8rem, 4.947vw, 4.8rem);
-  // TODO: margin-top should be adopted auto_clamp
-  margin-top: var(--margin);
   padding: .5em 0;
   text-align: center;
 

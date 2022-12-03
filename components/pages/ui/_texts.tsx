@@ -2,7 +2,7 @@ import styles from './_text.module.scss';
 
 const Texts = (props:string) => {
   return (
-    <section>
+    <section className="l-section">
       <h2 className="pageTitle">{props.sectionName}</h2>
       <p className="txt--l">Font Large</p>
       <p>Font Normal</p>

@@ -4,7 +4,7 @@ import projectStyles from '../../../styles/sass/obj-project/pages/_p-aboutButton
 
 const Buttons = (props:string) => {
   return (
-    <section>
+    <section className="l-section l-section--bgWhite">
       <h2 className="pageTitle">{props.sectionName}</h2>
       <div className={projectStyles['p-about-buttons']}>
         <Button styleClass="c-button" buttonName="Button" />
