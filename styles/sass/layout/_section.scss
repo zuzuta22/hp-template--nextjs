@@ -21,4 +21,8 @@
   &--bgWhite {
     background: var(--white);
   }
+
+  &__inner {
+    padding: clamp(2rem, 10vmax, 3rem) 2vw;
+  }
 }

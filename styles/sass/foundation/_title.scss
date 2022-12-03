@@ -47,6 +47,7 @@
 .title2 {
   font-size: clamp(2.4rem, 3.125vw, 2.8rem);
   position: relative;
+  margin-bottom: 2rem;
 
   &::before,
   &::after {
