@@ -7,6 +7,7 @@ import PageTitle from '../const/pageTitle';
 import Titles from '../components/pages/ui/_titles';
 import Texts from '../components/elements/_texts';
 import Buttons from '../components/pages/ui/_buttons';
+import Lists from '../components/pages/ui/_lists';
 
 
 const Ui:NextPage = () => {
@@ -18,6 +19,7 @@ const Ui:NextPage = () => {
         <Titles sectionName="Titles" />
         <Texts sectionName="Texts" />
         <Buttons sectionName="Buttons" />
+        <Lists sectionName="Lists" />
         {/* <section>
           <h2>Table</h2>
         </section> */}

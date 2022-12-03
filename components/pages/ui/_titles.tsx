@@ -7,7 +7,7 @@ const Titles = (props:string) => {
       <section>
         <CustomTitle tagName="h2" classText="title1" titleText="H2 Title" />
         <CustomTitle tagName="h3" classText="title2" titleText="H3 Title" />
-        <h3 className="title2">静的宣言タイトル</h3>
+        <h3 className="title2">H3 Static Declaration</h3>
       </section>
     </section>
   )
