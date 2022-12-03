@@ -3,7 +3,7 @@ import CustomTitle from '../../elements/_title';
 
 const Lists = (props:string) => {
   return (
-    <section>
+    <section className="l-section">
       <CustomTitle tagName="h2" classText="pageTitle" titleText={props.sectionName} />
       <List />
       <List classText="disk" />

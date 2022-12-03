@@ -2,7 +2,7 @@ import CustomTitle from '../../elements/_title';
 
 const Titles = (props:string) => {
   return (
-    <section>
+    <section className="l-section l-section--bgWhite">
       <CustomTitle tagName="h2" classText="pageTitle" titleText={props.sectionName} />
       <section>
         <CustomTitle tagName="h2" classText="title1" titleText="H2 Title" />
