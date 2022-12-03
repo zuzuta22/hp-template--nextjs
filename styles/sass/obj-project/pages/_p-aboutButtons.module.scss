@@ -1,0 +1,16 @@
+@use '../../global' as g;
+
+.p-about-buttons {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: var(--margin-xs);
+
+  padding: var(--margin-s);
+
+  @include g.mq-up(xs) {
+    flex-direction: row;
+    column-gap: var(--margin);
+  }
+}

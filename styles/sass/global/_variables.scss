@@ -16,12 +16,12 @@ $width_comp: 1860;
 // ==========================
 // media query
 // ==========================
-$bp_sp: 480px;
-$bp_xs: 640;
+$bp_sp: 375;
+$bp_xs: 480;
 $bp_s: 768;
 $bp_m: 1024;
-$bp_l: 1240;
-$bp_xl: 1720;
+$bp_l: 1280;
+$bp_xl: 1920;
 
 $breakpoint_up: (
   "sp": "min-width: #{$bp_sp + px}",

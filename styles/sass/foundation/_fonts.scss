@@ -1,15 +1,28 @@
-.txt--l {
-  font-size: clamp(1.8rem, 3.125vw, 2rem);
+a {
+  color: var(--color-link);
 }
-
-.txt--s {
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
-}
-
-.txt--bold {
-  font-weight: 700;
-}
-
-.txt--red {
-  color: var(--color-red);
+.txt {
+  &--l {
+    // TODO: clamp to auto_clamp
+    font-size: clamp(1.8rem, 3.125vw, 2rem);
+  }
+  &--s {
+    // TODO: clamp to auto_clamp
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+  }
+  &--bold {
+    font-weight: 700;
+  }
+  &--red {
+    color: var(--color-red);
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--left {
+    text-align: left;
+  }
 }

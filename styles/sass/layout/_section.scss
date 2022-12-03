@@ -1,0 +1,28 @@
+@use '../global' as g;
+
+.l-main {
+  margin: auto;
+  padding: clamp(3rem, 10vmax, 10rem) 0;
+  width: max(80%, var(--width));
+  max-width: 100%;
+
+}
+.l-section {
+  background: var(--gray-2);
+  box-shadow: 0 3px 8px rgb(0 0 0 / 7%);
+  margin: var(--margin-xl) auto 0;
+  padding: clamp(2rem, 10vmax, 5rem) 2vw;
+  position: relative;
+
+  @include g.mq-up() {
+    border-radius: 4px;
+  }
+
+  &--bgWhite {
+    background: var(--white);
+  }
+
+  &__inner {
+    padding: clamp(2rem, 10vmax, 3rem) 2vw;
+  }
+}

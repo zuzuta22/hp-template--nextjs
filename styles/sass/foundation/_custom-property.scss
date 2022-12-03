@@ -1,5 +1,62 @@
 @use "../global" as g;
 
 :root {
-  --color-red: #c30d23;
+  // カラー
+  --color-primary: #0b318f;
+  --color-primary-light: #bdcefa;
+  --color-primary-dark: #051847;
+  --color-primary-bg: #051847;
+  
+  --color-accent: #d52868;
+  --color-accent-light: #efa9c3;
+  --color-accent-dark: #961d49;
+  --color-accent-bg: #6b1434;
+
+  --black: #1d1d21;
+  --gray-9: #3f3f3f;
+  --gray-8: #6c6c6c;
+  --gray-7: #898989;
+  --gray-6: #a0a0a0;
+  --gray-5: #b3b3b3;
+  --gray-4: #c4c4c4;
+  --gray-3: #d3d3d3;
+  --gray-2: #e1e1e1;
+  --gray-1: #ededed;
+  --white: white;
+
+   // feedback
+  --color-success: #107C22;
+  --color-error: #AF1D1D;
+  --color-warning: #ffd137;
+  --color-link: #3276BA;
+
+  // layout
+  --color-background: var(--white);
+  --color-block: #7781B1;
+  --color-footer-nav: #2C3149;
+  --color-footer: #2C2E37;
+  --color-icon: #5B6598;
+
+  // margin
+  --margin-xs: 10px;
+  --margin-s: 15px;
+  --margin: 30px;
+  --margin-l: 60px;
+  --margin-xl: 100px;
+
+  // breakpoint
+  --bp-min: 375;
+  --bp-xs: 480;
+  --bp-s: 768;
+  --bp: 1024;
+  --bp-l: 1280;
+  --bp-max: 1920;
+
+  // width
+  --width-min: 375px;
+  --width-xs: 480px;
+  --width-s: 768px;
+  --width: 1024px;
+  --width-l: 1280px;
+  --width-max: 1920px;
 }

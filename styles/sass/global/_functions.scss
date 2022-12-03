@@ -1,0 +1,46 @@
+@use "variables" as var;
+@use "sass:math";
+
+@function round_decimal($number) {
+  $float: math.round($number * 1000);
+  $float: math.div($float, 1000);
+  @return $float;
+}
+
+@function rem($px) {
+  @return math.div($px,16) + rem;
+}
+
+@function px_to_vw($px,$point) {
+  @return math.div(100, $point) * $px;
+}
+
+@function auto_min($size,$point: 768,$unit: px) {
+	$vw_num: px_to_vw($size, $point);
+	$vw_val: round_decimal($vw_num) + vw;
+
+	// rem or px
+	@if $unit == rem {
+		$size: rem($size);
+	} @else {
+		$size: $size + px;
+	}
+
+	@return min($vw_val,$size);
+}
+
+@function auto_clamp($size_min,$size_max,$point: 768,$unit: px) {
+  $vw_num: px_to_vw($size_max, $point);
+  $vw_val: round_decimal($vw_num) + vw;
+
+  // remかpxか
+	@if $unit == rem {
+    $size_min: rem($size_min);
+    $size_max: rem($size_max);
+  } @else {
+    $size_min: $size_min + px;
+    $size_max: $size_max + px;
+  }
+
+  @return clamp($size_min,$vw_val,$size_max);
+}
