@@ -2,23 +2,26 @@
 
 :root {
   // カラー
-  --color-primary: #232F5f;
-  --color-primary-light: color-mod(var(--color-primary) tint(15%));
-  --color-primary-dark: color-mod(var(--color-primary) shade(15%));
-  --color-primary-bg: color-mod(var(--color-primary) alpha(20%));
+  --color-primary: #0b318f;
+  --color-primary-light: #bdcefa;
+  --color-primary-dark: #051847;
+  --color-primary-bg: #051847;
   
-  --color-accent: #7097c3;
-  --color-accent-light: color-mod(var(--color-accent) tint(15%));
-  --color-accent-dark: color-mod(var(--color-accent) shade(10%));
-  --color-accent-bg: color-mod(var(--color-accent) alpha(20%));
+  --color-accent: #d52868;
+  --color-accent-light: #efa9c3;
+  --color-accent-dark: #961d49;
+  --color-accent-bg: #6b1434;
 
   --black: #1d1d21;
-  --gray-10: #2e2e31;
-  --gray-6: #7b7a7d;
-  --gray-4: #a5a5a6;
-  --gray-3: #bbbbbc;
-  --gray-2: #d1d0d2;
-  --gray-1: #e8e7e8;
+  --gray-9: #3f3f3f;
+  --gray-8: #6c6c6c;
+  --gray-7: #898989;
+  --gray-6: #a0a0a0;
+  --gray-5: #b3b3b3;
+  --gray-4: #c4c4c4;
+  --gray-3: #d3d3d3;
+  --gray-2: #e1e1e1;
+  --gray-1: #ededed;
   --white: white;
 
    // feedback

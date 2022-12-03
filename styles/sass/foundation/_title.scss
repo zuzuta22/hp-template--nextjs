@@ -52,7 +52,7 @@
 
   &::before,
   &::after {
-    background: var(--color-accent);
+    background: var(--color-primary-light);
     content: '';
     display: inline;
     height: 3px;
